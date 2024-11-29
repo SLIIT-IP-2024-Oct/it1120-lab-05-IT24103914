@@ -6,6 +6,7 @@ public class IT24103914Lab5Q3 {
        // Declare variables
        int startDate, endDate, numDays;
        double totalAmount;
+       final int roomRate = 48000;
 
        // Create a Scanner object to read input
        Scanner input = new Scanner(System.in);
@@ -31,7 +32,6 @@ public class IT24103914Lab5Q3 {
        numDays = endDate - startDate;
 
        // Calculate total amount with discount based on the number of days
-       int roomRate = 48000;
        if (numDays < 3) {
            totalAmount = numDays * roomRate;
        }
